@@ -16,7 +16,7 @@ import ResetPassword from "./ResetPassword";
 const defaultTheme = createTheme();
 
 export default function SignIn() {
-  const [test, setTest] = useState<boolean>(false);
+  const [forgotPw, setForgotPw] = useState<boolean>(false);
   const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     const data = new FormData(event.currentTarget);
@@ -26,7 +26,7 @@ export default function SignIn() {
     });
   };
 
-  return test ? (
+  return forgotPw ? (
     <ResetPassword />
   ) : (
     <ThemeProvider theme={defaultTheme}>
@@ -82,7 +82,9 @@ export default function SignIn() {
             </Button>
             <Grid container>
               <Grid item xs>
-                <Button onClick={() => setTest(true)}>Forgot password?</Button>
+                <Button onClick={() => setForgotPw(true)}>
+                  Forgot password?
+                </Button>
               </Grid>
             </Grid>
           </Box>
