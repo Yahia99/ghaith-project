@@ -1,13 +1,15 @@
 import React from "react";
+import LandingPage from "./components/LandingPage";
 // import SignIn from "./components/SignIn";
 import Gallery from "./components/Gallery";
 
 function App() {
   return (
-    <div className="App">
+    <>
+      <LandingPage />
       <Gallery />
       {/* <SignIn /> */}
-    </div>
+    </>
   );
 }
 
