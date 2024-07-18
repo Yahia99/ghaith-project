@@ -1,4 +1,3 @@
-import * as React from "react";
 import { useState } from "react";
 import ImageList from "@mui/material/ImageList";
 import ImageListItem from "@mui/material/ImageListItem";
@@ -7,7 +6,6 @@ import ListSubheader from "@mui/material/ListSubheader";
 import IconButton from "@mui/material/IconButton";
 import InfoIcon from "@mui/icons-material/Info";
 import Container from "@mui/material/Container";
-// import { useMediaQuery, useTheme } from "@mui/material";
 
 function Gallery() {
   // const theme = useTheme();
